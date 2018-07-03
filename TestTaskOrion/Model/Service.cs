@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace TestTaskOrion.Model
+﻿namespace TestTaskOrion.Model
 {
     public class Service : IOfferable
     {

@@ -1,13 +1,11 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace TestTaskOrion.Model
 {
     public class Appeal
     {
         public enum AppealReason { FirstConnection, Failure, ChangeTerms, Payment, Other }
+
         [Required]
         public int Id { get; set; }
 
