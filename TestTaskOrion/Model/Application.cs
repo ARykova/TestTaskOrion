@@ -6,6 +6,7 @@ namespace TestTaskOrion.Model
 {
     public class Application
     {
+        public int Id { get; set; }
         public Appeal Appeal { get; set; }
         public IOfferable Offer { get; set; }
     }
