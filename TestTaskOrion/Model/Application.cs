@@ -12,7 +12,14 @@ namespace TestTaskOrion.Model
         [Required]
         public Appeal Appeal { get; set; }
 
-        public IOfferable Offer { get; set; }
+        public Service ChosenService {
+            get
+            {
+                return ChosenTariff.MainService;
+            }
+        }
+
+        public ITariff ChosenTariff { get; set; }
 
         public bool _isFinished { get; protected set; } = false;
 

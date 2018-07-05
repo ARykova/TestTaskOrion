@@ -47,42 +47,9 @@ namespace TestTaskOrion.DataAccess
             return services;
         }
 
-        public List<Tariff> GetTariffs()
+        public List<ITariff> GetTariffs(Service service)
         {
-            var tariffs = new List<Tariff>();
-            tariffs.Add(
-                new Tariff
-                {
-                    Id = 1,
-                    Title = "Orion 450",
-                    Price = 450,
-                    DaySpeed = 50,
-                    NightSpeed = 100,
-                    Description = "БОНУС: Орион IPTV более 200 каналов"
-                });
-            tariffs.Add(
-                new Tariff
-                {
-                    Id = 2,
-                    Title = "Orion 300",
-                    Price = 300,
-                    DaySpeed = 15,
-                    NightSpeed = 100,
-                    Description = "БОНУС: Орион IPTV более 200 каналов"
-                });
-            tariffs.Add(
-                new Tariff
-                {
-                    Id = 3,
-                    Title = "Orion 600",
-                    Price = 600,
-                    DaySpeed = 80,
-                    NightSpeed = 100,
-                    Description = "БОНУС: Орион IPTV более 200 каналов"
-                });
-
-            return tariffs;
-
+            
         }
 
         public bool SaveAppeal(Appeal appeal)

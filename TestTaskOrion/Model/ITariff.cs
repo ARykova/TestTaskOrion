@@ -2,18 +2,16 @@
 
 namespace TestTaskOrion.Model
 {
-    public interface IOfferable
+    public interface ITariff 
     {
-        [Required]
         int Id { get; set; }
 
-        [Required, MaxLength(50)]
-        string Title { get; set; }
-        
-        [Required]
-        double Price { get; set; }
+        Service MainService { get; set; }
 
-        [MaxLength(5000)]
+        string Title { get; set; }
+
+        double Price { get; set; }        
+
         string Description { get; set; }
     }
 }
