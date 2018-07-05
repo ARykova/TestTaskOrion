@@ -4,22 +4,15 @@ namespace TestTaskOrion.Model
 {
     public class Application
     {
-        public enum EarlyFinishReason { Cancel, SolvedByOperator }
-
-        [Required]
+        public enum EarlyFinishReason { Cancel = 1, SolvedByOperator = 2 }
+        
         public int Id { get; set; }
-
-        [Required]
+        
         public Appeal Appeal { get; set; }
 
-        public Service ChosenService {
-            get
-            {
-                return ChosenTariff.MainService;
-            }
-        }
+        public Service ChosenService { get; set; } = new Service();
 
-        public ITariff ChosenTariff { get; set; }
+        public ITariff ChosenTariff { get; set; } 
 
         public bool _isFinished { get; protected set; } = false;
 

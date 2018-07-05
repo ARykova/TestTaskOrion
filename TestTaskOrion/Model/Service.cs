@@ -10,7 +10,9 @@ namespace TestTaskOrion.Model
 
         public string Description { get; set; }
 
-        public List<ITariff> Tariffs { get; set; }
-       
+        public List<ITariff> Tariffs {
+            get;
+            set;
+        }       
     }
 }
